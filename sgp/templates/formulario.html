@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Bem vindo, a pagina de inicial</h1>
+    <h1>Formulário de Entrega</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.nome.label }}<br>
+            {{ form.nome(size=32) }}<br>
+            {% for error in form.nome.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.data_entrega.label }}<br>
+            {{ form.data_entrega() }}<br>
+            {% for error in form.data_entrega.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+    {% endblock %}
