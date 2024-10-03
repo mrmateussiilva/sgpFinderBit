@@ -33,13 +33,9 @@
     </style>
   </head>
   <body>
-    <head>
-      <h1>SGP - FinderBit</h1>
-      <nav>
-        <a href="/">Incio</a>
-        <a href="{{ url_for('criar_pedido') }}">Incio</a>
-      </nav>
-    </head>
+   <header>
+    {% include 'navbar.html' %}
+   </header>
     {% block content %} {% endblock %}
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
