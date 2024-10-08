@@ -1,14 +1,11 @@
 from flask import Flask,render_template,request,redirect
 import json
 
+from models_dev import model
 
-def load_model_dev():
-    f = "../models_dev/models.json"
-    with open(f, "r") as fp:
-        data = json.load(fp)
-        print(data)
-    return dict(data)
-    
+
+
+
 
 
 
@@ -17,14 +14,21 @@ app = Flask(__name__)
 
 @app.get("/")
 def index():
-    pedidos = load_model_dev()
+    pedidos = model.load_model_dev()
     return render_template("index.html",title_page="Pagina Inicial",pedidos=pedidos.items())
 
 @app.route("/criar")
 def criar_pedido():
     return render_template("product.html",title_page="Criar Pedido")
-    pass
 
+
+@app.route("/pedido/<idd>",methods=["GET"])
+def view_pedido(idd):
+    pedido = model.get_by_id((idd))
+    if pedido is not None:
+        return pedido
+    else:
+        return "Pedido não existe"
 
 if __name__ == "__main__":
     app.run(debug=True)
