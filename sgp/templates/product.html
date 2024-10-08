@@ -1,16 +1,17 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container">
-  <form class="select-pedido">
-    <select
-      class="form-select form-select mb-3"
+<div class="container " style="padding-top: 32px;">
+    <div class="form-floating ">
+      <select
+      class="form-select "
       aria-label="Selecione o tipo de pedido"
       id="choicesPedido"
-    >
+      >
       <option selected></option>
       <option value="painel-redondo">Painel</option>
       <option value="2">Totem</option>
     </select>
-  </form>
+    <label for="choicesPedido">Selecione o tipo de Produto</label>
+  </div>
   <div class="container hidden" id="form-painelRedondo">
     <form class="row" style="border: 1px solid black; padding: 32px;">
       <div class="col">
