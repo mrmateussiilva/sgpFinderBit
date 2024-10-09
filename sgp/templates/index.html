@@ -31,7 +31,7 @@
         <td>{{pedido.envio}}</td>
         <td>{{pedido.date_entrega}}</td>
         <td>
-          <a href="{{ url_for('view_pedido', idd=id) }}">Ver mais</a>
+          <a href="{{ url_for('core.view_pedido', idd=id) }}">Ver mais</a>
         </td>
       </tr>
       {% endfor%}

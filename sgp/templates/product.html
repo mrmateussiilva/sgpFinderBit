@@ -13,10 +13,11 @@
     <label for="choicesPedido">Selecione o tipo de Produto</label>
   </div>
   <div class="container hidden" id="form-painelRedondo">
-    <form class="row" style="border: 1px solid black; padding: 32px;">
+    <form method="post" class="row" style="border: 1px solid black; padding: 32px;">
       <div class="col">
         <input
           type="text"
+          name="nameClient"
           class="form-control"
           placeholder="Nome do Cliente"
           aria-label="Nome do Cliente"
@@ -27,6 +28,7 @@
 
           <input
           type="text"
+
           class="form-control"
           placeholder="Cidade"
           aria-describedby="basic-addon1"
@@ -44,6 +46,7 @@
         <div class="row">
             <div id="dropzone">Cole ou arraste a imagem aqui</div>
         </div>
+        <input type="submit" value="Salvar" class="btn btn-sucess">
     </form>
     </div>
   </div>
