@@ -12,7 +12,7 @@ def criar_pedido():
         return render_template("product.html",title_page="Criar Pedido")
     elif request.method == "POST":
         name = request.form.get("nameClient")
-        ciu
+        
         return "SUcesso {}".format(name)
 @bp_pedido.route("/pedido/<idd>",methods=["GET","POST"])
 def view_pedido(idd):
