@@ -14,8 +14,11 @@ app.register_blueprint(core.bp_pedido)
 
 @app.get("/")
 def index():
-    pedidos = model.load_model_dev()
-    return render_template("index.html",title_page="Pagina Inicial",pedidos=pedidos.items())
+    pedidos = model.get_all_pedidos()
+    return render_template(
+        "index.html"
+        ,title_page="Pagina Inicial"
+        ,pedidos=pedidos.items())
 
 
 if __name__ == "__main__":
