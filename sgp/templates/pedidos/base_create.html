@@ -10,7 +10,7 @@
               type="number"
               id="os"
               class="form-control"
-              name="os"
+              name="numberOs"
               required
               readonly
             />
@@ -35,18 +35,7 @@
             <label for="cliente" class="form-label mx-2">Cliente</label>
           </div>
         </div>
-        <!--campo cpf-->
-        <div class="row mb-2">
-          <div class="col-xl-6 col-lg-6 form-floating">
-            <input type="text" id="cliente" class="form-control" />
-            <label for="cliente" class="form-label mx-2">Cidade</label>
-          </div>
 
-          <div class="col-xl-6 col-lg-6 form-floating">
-            <input type="text" id="cliente" class="form-control" />
-            <label for="cliente" class="form-label mx-2">Contato</label>
-          </div>
-        </div>
         <!--campo complemento-->
         <div class="row">
           <div class="col-xl-12 col-lg-12 form-floating">
@@ -56,160 +45,12 @@
               <option value="opcao2">Painel Retangular</option>
               <option value="opcao3">Totem</option>
             </select>
-            <label for="genero" class="form-label mx-2">Tipo Serviço</label>
           </div>
           <div class="mt-2">
-            <button type="submit" class="btn btn-primary">Criar</button>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
           </div>
         </div>
       </div>
     </div>
-
-    <!--PARTE PAINEL REDONDO-->
-    <div id="redondo" class="row">
-      <div class="col-12 col-lg-8 col-xl-6 mx-auto">
-        <hr class="" />
-        <div class="row mb-2">
-          <div class="col-xl-12 col-lg-12 form-floating mb-2">
-            <input type="text" id="descricao" class="form-control" />
-            <label for="descricao" class="form-label mx-2">Descrição</label>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="text" id="design" class="form-control" />
-            <label for="design" class="form-label mx-2">Design</label>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="text" id="tecido" class="form-control" />
-            <label for="tecido" class="form-label mx-2">Tecido</label>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="text" id="maquina" class="form-control" />
-            <label for="maquina" class="form-label mx-2">Maquina</label>
-          </div>
-
-          <hr class="mb-2" />
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="number" id="largura" class="form-control" />
-            <label for="largura" class="form-label mx-2">Largura</label>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="text" id="altura" class="form-control" />
-            <label for="altura" class="form-label mx-2">Altura</label>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="text" id="metro" class="form-control" />
-            <label for="metro" class="form-label mx-2">m²</label>
-          </div>
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="number" id="emenda" class="form-control" />
-            <label for="emenda" class="form-label mx-2">Emenda</label>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 form-floating mb-2">
-            <input type="text" id="qtemenda" class="form-control" />
-            <label for="qtemenda" class="form-label mx-2">Qt. Emenda</label>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 form-floating mb-2">
-            <input type="number" id="valorArte" class="form-control" />
-            <label for="valorArte" class="form-label mx-2">Valor Arte</label>
-          </div>
-
-          <div class="col-xl-2 col-lg-2 mb-3 form-check">
-            <input type="checkbox" id="Lembrar" class="form-check-input" />
-            <label for="lembrar" class="form-check-label">Exclusiva</label>
-          </div>
-
-          <div class="col-xl-12 col-lg-12 form-floating mb-2">
-            <input type="text" id="obsCostura" class="form-control" />
-            <label for="obsCostura" class="form-label mx-2">Obs Costura</label>
-          </div>
-
-          <hr class="mb-2" />
-
-          <div class="col-xl-4 col-lg-4 form-floating mb-2">
-            <input type="text" id="entrega" class="form-control" />
-            <label for="entrega" class="form-label mx-2">Entrega</label>
-          </div>
-
-          <div class="col-xl-8 col-lg-8 form-floating mb-2">
-            <input type="text" id="obsEntrega" class="form-control" />
-            <label for="obsEntrega" class="form-label mx-2">Obs Entrega</label>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 form-floating mb-2">
-            <input
-              type="number"
-              id="valorPainel"
-              class="form-control"
-              name="valorPainel"
-              required
-              readonly
-            />
-            <label for="valorPainel" class="form-label mx-2"
-              >Valor Painel</label
-            >
-          </div>
-
-          <div class="col-xl-3 col-lg-3 form-floating mb-2">
-            <input
-              type="number"
-              id="valorOutro"
-              class="form-control"
-              name="valorOutro"
-              required
-              readonly
-            />
-            <label for="valorOutro" class="form-label mx-2">V. Outros</label>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 form-floating mb-2">
-            <input
-              type="number"
-              id="valorArte1"
-              class="form-control"
-              name="valorArte1"
-              required
-              readonly
-            />
-            <label for="valorArte1" class="form-label mx-2">V. Arte</label>
-          </div>
-
-          <div class="col-xl-3 col-lg-3 form-floating mb-2">
-            <input
-              type="number"
-              id="valorTotal"
-              class="form-control"
-              name="valorTotal"
-              required
-              readonly
-            />
-            <label for="valorTotal" class="form-label mx-2">V. Total</label>
-          </div>
-
-          <div class="col-xl-8 col-lg-8 mb-2">
-            <input class="form-control" type="file" id="formFile" />
-            <label for="formFile" class="form-label mx-2"
-              >Escolha o arquivo</label
-            >
-          </div>
-
-          <div class="col-xl-2 col-lg-2">
-            <button type="submit" class="btn btn-primary">Salvar</button>
-          </div>
-          <div class="col-xl-2 col-lg-2">
-            <button type="submit" class="btn btn-primary">Voltar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--PARTE PAINEL REDONDO-->
   </form>
 </div>
