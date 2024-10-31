@@ -57,13 +57,27 @@
   <div class="container hidden" id="form-painelRedondo">
     <form method="post" class="row" style="border: 1px solid black; padding: 32px;">
       <div class="row">
+        <div class="col">
         <div class="form-floating">
           <input type="text" id="inamePainel" class="form-control" />
-          <label for="inamePainel" class="form-label mx-2">Nome do Painel</label>
+          <label for="inamePainel" class="form-label mx-2">Descrição do Painel</label>
         </div>
       </div>
+        <div class="col-4">
+          <div class="input-group">
+            <input type="number" class="form-control" placeholder="Largura" aria-label="Username">
+            <span class="input-group-text">X</span>
+            <input type="number" class="form-control" placeholder="Altura" aria-label="Server">
+          </div>
+        </div>
+          
+        </div>
+      <!-- Dropzone area -->
       <div class="row">
-            <div id="dropzone">Cole ou arraste a imagem aqui</div>
+        <div class="col">
+
+        </div>
+            <div class="col" id="dropzone">Cole ou arraste a imagem aqui</div>
       </div>
         <input type="button" onclick="validateProduto()" value="Salvar" class="btn btn-sucess">
       </form>
@@ -71,10 +85,18 @@
   </div>
 </div>
 <div class="container " style="padding-top: 32px;">
-  <div class="row">
-
+  <div class="row justify-content-md-left">
+    <div class="col col-lg-2">
+      <input class="btn btn-primary" type="submit" value="Salvar Pedido">
+    </div>
+    <div class="col col-lg-2">
+      <input class="btn btn-primary" type="reset" value="Limpar">
+    </div>
+ 
   </div>
 </div>
+
+
 <script src="
 {{ url_for('static', filename='js/dropzone.js') }}
 "></script>
