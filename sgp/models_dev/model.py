@@ -23,10 +23,10 @@ def get_all_pedidos() -> dict:
 # Post
 def create_pedido(**kwargs):
     last_key = max(get_all_pedidos().keys())
-    new_key = last_key + 1 
-    d = kwargs
-    try:
-        
-        pass
-    except:
-        pass
+
+    
+    
+    
+def last_id() -> int:
+    last_key = max(get_all_pedidos().keys())
+    return last_key 
