@@ -14,7 +14,8 @@ def index():
 
 @bp_pedido.route("/pedidos/criar")
 def create():
-    return render_template("pedidos/create.html",title_page="Criação de Pedidos")
+    number_os =  model.last_id()
+    return render_template("pedidos/index obselt.html",title_page="Criação de Pedidos",number_os=number_os)
 
 
     
@@ -22,6 +23,6 @@ def create():
 def view_pedido(idd):
     pedido = model.get_by_id((idd))
     if pedido is not None:
-        return pedido
+        return render_template("pedidos/view.html",pedido=pedido)
     else:
         return "Pedido não existe"
